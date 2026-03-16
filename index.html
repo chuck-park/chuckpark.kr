@@ -3,96 +3,184 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chuck Park — Project Hub</title>
-    <meta name="description" content="Chuck Park의 프로젝트 허브" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+    <title>Chuck Park</title>
+    <meta name="description" content="Chuck Park 포트폴리오 및 빌드 로그" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" as="style" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
     <link rel="stylesheet" href="./styles.css" />
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-M95H0VTXCR"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
+      function gtag(){dataLayer.push(arguments);} 
       gtag('js', new Date());
-
       gtag('config', 'G-M95H0VTXCR');
     </script>
   </head>
+
   <body>
-    <div class="bg-glow"></div>
+    <div class="global-cover">
+      <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1800&q=80" alt="cover" />
+    </div>
 
-    <header class="topbar wrap">
-      <a class="brand" href="#">CHUCK PARK</a>
-      <nav>
-        <a href="#projects">Projects</a>
-        <a href="https://blog.chuckpark.kr" target="_blank" rel="noreferrer">Blog</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
-
-    <main class="wrap">
-      <section class="hero">
-        <p class="eyebrow">PROJECT HUB</p>
-        <h1>
-          아이디어를
-          <span>작동하는 제품</span>으로.
-        </h1>
-        <p class="desc">
-          Chuck Park의 실험과 빌드를 모아둔 허브입니다. 빠르게 만들고,
-          시장에서 검증하고, 계속 개선합니다.
-        </p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#projects">프로젝트 보기</a>
-          <a class="btn" href="https://blog.chuckpark.kr" target="_blank" rel="noreferrer">블로그 가기</a>
+    <div class="global-content">
+      <section class="author">
+        <div class="container">
+          <div class="author-box">
+            <div class="author-info">
+              <div class="author-meta">
+                <a class="author-avatar" href="#">
+                  <img src="./assets/profile.jpg" alt="Chuck Park" />
+                </a>
+                <h1 class="author-name">Chuck Park</h1>
+                <span class="author-role">AI Product Builder</span>
+              </div>
+              <a class="cta-button" href="mailto:chuck.m.park@gmail.com">✉️ Get In Touch</a>
+            </div>
+            <p class="author-bio">
+              AI로 빠르게 제품을 만들고, 시장 반응으로 개선합니다. 인증/결제 퍼널, 운영 자동화,
+              데이터 기반 실험을 중심으로 실제 서비스 운영 경험을 공유합니다.
+            </p>
+          </div>
         </div>
       </section>
 
-      <section id="projects" class="projects">
-        <div class="section-head">
-          <h2>Projects</h2>
-
+      <header class="header">
+        <div class="container">
+          <nav class="main-nav">
+            <ul class="nav-list">
+              <li><a class="active" href="#">🏠 Home</a></li>
+              <li><a href="#projects">🚀 Projects</a></li>
+              <li><a href="#testimonials">💬 Testimonials</a></li>
+              <li><a href="#insights">✍️ Blog</a></li>
+              <li><a href="#contact">📮 Contact</a></li>
+            </ul>
+          </nav>
         </div>
+      </header>
 
-        <div class="grid">
-          <article class="card">
-            <div class="tag">Commerce</div>
-            <h3>농산물 이커머스</h3>
-            <p>상품 운영 자동화와 반복 구매 전환 실험.</p>
-            <a href="#" aria-label="농산물 이커머스 상세">준비 중</a>
-          </article>
+      <main class="content">
+        <section id="projects" class="section">
+          <div class="container">
+            <div class="section-info">
+              <div class="section-head">
+                <h2 class="section-title">🚀 Portfolio</h2>
+                <a class="section-link" href="https://blog.chuckpark.kr" target="_blank" rel="noreferrer">View all →</a>
+              </div>
+            </div>
 
-          <article class="card">
-            <div class="tag">SaaS</div>
-            <h3>IT 서비스 MVP</h3>
-            <p>문제-해결 적합도 검증을 위한 MVP 판매 테스트.</p>
-            <a href="#" aria-label="IT 서비스 MVP 상세">준비 중</a>
-          </article>
+            <div class="project-grid">
+              <article class="project-card">
+                <div class="project-info">
+                  <h3>농산물 이커머스 자동화</h3>
+                  <p>상품 운영 자동화와 재구매 전환 실험을 통해 실제 매출 지표를 개선하는 프로젝트.</p>
+                </div>
+                <div class="project-image">
+                  <img src="https://images.unsplash.com/photo-1488459716781-31db52582fe9?auto=format&fit=crop&w=900&q=80" alt="commerce" />
+                </div>
+              </article>
 
-          <article class="card">
-            <div class="tag">Operations</div>
-            <h3>운영 자동화 스택</h3>
-            <p>업무 루틴과 보고 흐름을 자동화하는 내부 시스템.</p>
-            <a href="#" aria-label="운영 자동화 스택 상세">준비 중</a>
-          </article>
+              <article class="project-card">
+                <div class="project-info">
+                  <h3>AI 서비스 MVP 판매 검증</h3>
+                  <p>문제-해결 적합도 검증을 위해 AI 기반 MVP를 빠르게 제작하고 유료 전환을 테스트.</p>
+                </div>
+                <div class="project-image">
+                  <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=900&q=80" alt="mvp" />
+                </div>
+              </article>
+
+              <article class="project-card">
+                <div class="project-info">
+                  <h3>운영 자동화 스택</h3>
+                  <p>반복 업무, 리포트 작성, 알림 체계를 자동화해 운영 시간을 줄이고 실행 속도를 높이는 내부 툴.</p>
+                </div>
+                <div class="project-image">
+                  <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=900&q=80" alt="ops" />
+                </div>
+              </article>
+
+              <article class="project-card">
+                <div class="project-info">
+                  <h3>인증·결제 퍼널 개선</h3>
+                  <p>카카오/구글/이메일 로그인과 PG 연동 최적화로 결제 직전 이탈률을 줄이는 퍼널 개선 작업.</p>
+                </div>
+                <div class="project-image">
+                  <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=900&q=80" alt="auth-payment" />
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="testimonials" class="section testimonials">
+          <div class="container">
+            <div class="section-info">
+              <div class="section-head">
+                <h2 class="section-title">💬 Testimonials</h2>
+              </div>
+            </div>
+
+            <div class="testimonial-row">
+              <article class="testimonial-item">
+                <p class="quote">“실행 속도가 정말 빠릅니다. 아이디어를 바로 실험 가능한 형태로 바꿔줍니다.”</p>
+                <div class="client">- Product Collaborator</div>
+              </article>
+              <article class="testimonial-item">
+                <p class="quote">“복잡한 운영 루틴을 자동화해서 팀의 반복 업무 부담이 크게 줄었습니다.”</p>
+                <div class="client">- Ops Partner</div>
+              </article>
+              <article class="testimonial-item">
+                <p class="quote">“지표를 보고 다음 액션을 결정하는 방식이 명확해서 개선 속도가 빠릅니다.”</p>
+                <div class="client">- Growth Marketer</div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="insights" class="section">
+          <div class="container">
+            <div class="section-info">
+              <div class="section-head">
+                <h2 class="section-title">✍️ Latest Insights</h2>
+                <a class="section-link" href="https://blog.chuckpark.kr" target="_blank" rel="noreferrer">View all →</a>
+              </div>
+            </div>
+
+            <div class="article-list">
+              <article class="article-small">
+                <h3>[AI로 서비스 만들기] 카카오 로그인 KOE101 트러블슈팅</h3>
+                <p>앱 이름 공란 에러 상황에서 Client ID 오입력을 빠르게 찾고 복구한 과정 정리.</p>
+                <div class="article-meta">Mar 16, 2026 · 3 min read</div>
+              </article>
+
+              <article class="article-small">
+                <h3>[AI로 서비스 만들기] PG 연동 전 Email 가입/로그인 붙이기</h3>
+                <p>소셜 계정이 없는 사용자까지 진입 가능한 인증 퍼널로 확장한 구현기.</p>
+                <div class="article-meta">Mar 16, 2026 · 4 min read</div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="contact" class="section contact">
+          <div class="container">
+            <h2 class="section-title">📮 Contact</h2>
+            <p>협업 문의: <a href="mailto:chuck.m.park@gmail.com">chuck.m.park@gmail.com</a></p>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <p>© <span id="year"></span> Chuck Park. All rights reserved.</p>
         </div>
-      </section>
-
-      <section id="contact" class="contact">
-        <h2>Contact</h2>
-        <p>
-          협업/문의: <a href="mailto:chuck.m.park@gmail.com">chuck.m.park@gmail.com</a>
-        </p>
-      </section>
-    </main>
-
-    <footer class="wrap footer">
-      <p>© <span id="year"></span> Chuck Park. All rights reserved.</p>
-    </footer>
+      </footer>
+    </div>
 
     <script>
       document.getElementById('year').textContent = new Date().getFullYear();
