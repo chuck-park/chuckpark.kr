@@ -24,7 +24,7 @@
 
   <body>
     <div class="global-cover">
-      <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1800&q=80" alt="cover" />
+      <img src="./assets/cover-seoul.jpg" alt="cover" />
     </div>
 
     <div class="global-content">
@@ -39,12 +39,10 @@
                 <h1 class="author-name">Chuck Park</h1>
                 <span class="author-role">AI Product Builder</span>
               </div>
-              <a class="cta-button" href="mailto:chuck.m.park@gmail.com">✉️ Get In Touch</a>
             </div>
             <p class="author-bio">
-              AI로 빠르게 제품을 만들고, 시장 반응으로 개선합니다. 인증/결제 퍼널, 운영 자동화,
-              데이터 기반 실험을 중심으로 실제 서비스 운영 경험을 공유합니다.
-            </p>
+              AI로 제품을 빠르게 만들고, 사용자 반응을 바탕으로 지속적으로 개선합니다. 운영 자동화, 데이터 기반 실험을 중심으로 실제 서비스 운영 경험을 기록합니다.
+            
           </div>
         </div>
       </section>
@@ -54,10 +52,10 @@
           <nav class="main-nav">
             <ul class="nav-list">
               <li><a class="active" href="#">🏠 Home</a></li>
-              <li><a href="#projects">🚀 Projects</a></li>
-              <li><a href="#testimonials">💬 Testimonials</a></li>
-              <li><a href="#insights">✍️ Blog</a></li>
-              <li><a href="#contact">📮 Contact</a></li>
+              <li><a href="./portfolio.html">🚀 Portfolio</a></li>
+              <!-- <li><a href="#testimonials">💬 Testimonials</a></li> -->
+              <li><a href="./blog.html">✍️ Blog</a></li>
+              <li><a href="./about.html">👨🏻 About</a></li>
             </ul>
           </nav>
         </div>
@@ -69,11 +67,22 @@
             <div class="section-info">
               <div class="section-head">
                 <h2 class="section-title">🚀 Portfolio</h2>
-                <a class="section-link" href="https://blog.chuckpark.kr" target="_blank" rel="noreferrer">View all →</a>
+                <a class="section-link" href="./portfolio.html">더 보기 →</a>
               </div>
             </div>
 
             <div class="project-grid">
+              <article class="project-card project-card--link">
+                <div class="project-info">
+                  <h3>호랑사주</h3>
+                  <p>사주를 쉽고 친근하게 풀어주는 AI 운세 서비스</p>
+                </div>
+                <div class="project-image project-image--contain">
+                  <img src="./assets/horangsaju-card.jpg" alt="ai-saju" />
+                </div>
+                <a class="project-card-link" href="https://horangsaju.com/" target="_blank" rel="noreferrer" aria-label="AI 사주 서비스 사이트 이동"></a>
+              </article>
+
               <article class="project-card">
                 <div class="project-info">
                   <h3>농산물 이커머스 자동화</h3>
@@ -81,16 +90,6 @@
                 </div>
                 <div class="project-image">
                   <img src="https://images.unsplash.com/photo-1488459716781-31db52582fe9?auto=format&fit=crop&w=900&q=80" alt="commerce" />
-                </div>
-              </article>
-
-              <article class="project-card">
-                <div class="project-info">
-                  <h3>AI 서비스 MVP 판매 검증</h3>
-                  <p>문제-해결 적합도 검증을 위해 AI 기반 MVP를 빠르게 제작하고 유료 전환을 테스트.</p>
-                </div>
-                <div class="project-image">
-                  <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=900&q=80" alt="mvp" />
                 </div>
               </article>
 
@@ -104,19 +103,11 @@
                 </div>
               </article>
 
-              <article class="project-card">
-                <div class="project-info">
-                  <h3>인증·결제 퍼널 개선</h3>
-                  <p>카카오/구글/이메일 로그인과 PG 연동 최적화로 결제 직전 이탈률을 줄이는 퍼널 개선 작업.</p>
-                </div>
-                <div class="project-image">
-                  <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=900&q=80" alt="auth-payment" />
-                </div>
-              </article>
             </div>
           </div>
         </section>
 
+        <!--
         <section id="testimonials" class="section testimonials">
           <div class="container">
             <div class="section-info">
@@ -141,47 +132,56 @@
             </div>
           </div>
         </section>
+        -->
 
         <section id="insights" class="section">
           <div class="container">
             <div class="section-info">
               <div class="section-head">
-                <h2 class="section-title">✍️ Latest Insights</h2>
-                <a class="section-link" href="https://blog.chuckpark.kr" target="_blank" rel="noreferrer">View all →</a>
+                <h2 class="section-title">✍️ Blog</h2>
+                <a class="section-link" href="https://blog.chuckpark.kr" target="_blank" rel="noreferrer">더 보기 →</a>
               </div>
             </div>
 
-            <div class="article-list">
-              <article class="article-small">
-                <h3>[AI로 서비스 만들기] 카카오 로그인 KOE101 트러블슈팅</h3>
-                <p>앱 이름 공란 에러 상황에서 Client ID 오입력을 빠르게 찾고 복구한 과정 정리.</p>
-                <div class="article-meta">Mar 16, 2026 · 3 min read</div>
-              </article>
+            <div class="article-list" id="blog-feed-list" data-limit="3"></div>
+            <p class="feed-status" id="blog-feed-status">최신 글을 불러오는 중입니다…</p>
+            <noscript>
+              <p class="feed-status"><a href="https://blog.chuckpark.kr" target="_blank" rel="noreferrer">blog.chuckpark.kr에서 최신 글 보기 →</a></p>
+            </noscript>
+          </div>
+        </section>
 
-              <article class="article-small">
-                <h3>[AI로 서비스 만들기] PG 연동 전 Email 가입/로그인 붙이기</h3>
-                <p>소셜 계정이 없는 사용자까지 진입 가능한 인증 퍼널로 확장한 구현기.</p>
-                <div class="article-meta">Mar 16, 2026 · 4 min read</div>
-              </article>
+        <section id="subscribe" class="section">
+          <div class="container">
+            <div class="subscribe-box">
+              <h2 class="section-title">chuckpark.kr의 새로운 글과 인사이트를 가장 먼저 이메일로 받아보세요.</h2>
+
+              <form class="subscribe-form" action="https://buttondown.com/api/emails/embed-subscribe/chuckpark" method="post">
+                <label class="screen-reader-text" for="subscribe-email">이메일 주소</label>
+                <input id="subscribe-email" class="subscribe-input" type="email" name="email" placeholder="이메일 주소를 입력해주세요." required />
+                <button class="subscribe-button" type="submit">이메일 구독</button>
+              </form>
+
+
             </div>
           </div>
         </section>
 
-        <section id="contact" class="section contact">
-          <div class="container">
-            <h2 class="section-title">📮 Contact</h2>
-            <p>협업 문의: <a href="mailto:chuck.m.park@gmail.com">chuck.m.park@gmail.com</a></p>
-          </div>
-        </section>
       </main>
 
       <footer class="footer">
-        <div class="container">
+        <div class="container footer-inner">
           <p>© <span id="year"></span> Chuck Park. All rights reserved.</p>
+          <a class="footer-rss" href="https://blog.chuckpark.kr/feed.xml" target="_blank" rel="noreferrer" aria-label="RSS feed">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M6.18 17.82a1.64 1.64 0 1 1 0 3.28 1.64 1.64 0 0 1 0-3.28ZM3 10.5v3.28a7.9 7.9 0 0 1 7.72 7.72H14c0-6.05-4.95-11-11-11Zm0-6.5v3.28c7.4 0 13.22 5.82 13.22 13.22h3.28C19.5 10.98 12.52 4 3 4Z"/>
+            </svg>
+          </a>
         </div>
       </footer>
     </div>
 
+    <script src="./scripts/blog-feed.js"></script>
     <script>
       document.getElementById('year').textContent = new Date().getFullYear();
     </script>

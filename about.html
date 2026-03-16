@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About — Chuck Park</title>
+    <meta name="description" content="Chuck Park 소개 페이지" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" as="style" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <div class="global-cover">
+      <img src="./assets/cover-seoul.jpg" alt="cover" />
+    </div>
+
+    <div class="global-content">
+      <section class="author">
+        <div class="container">
+          <div class="author-box">
+            <div class="author-info">
+              <div class="author-meta">
+                <a class="author-avatar" href="./about.html">
+                  <img src="./assets/profile.jpg" alt="Chuck Park" />
+                </a>
+                <h1 class="author-name">Chuck Park</h1>
+                <span class="author-role">AI Product Builder</span>
+              </div>
+            </div>
+            <p class="author-bio">
+              AI로 제품을 빠르게 만들고, 사용자 반응을 바탕으로 지속적으로 개선합니다. 운영 자동화, 데이터 기반 실험을 중심으로 실제 서비스 운영 경험을 기록합니다.
+            
+          </div>
+        </div>
+      </section>
+
+      <header class="header">
+        <div class="container">
+          <nav class="main-nav">
+            <ul class="nav-list">
+              <li><a href="./index.html">🏠 Home</a></li>
+              <li><a href="./portfolio.html">🚀 Portfolio</a></li>
+              <li><a href="./blog.html">✍️ Blog</a></li>
+              <li><a class="active" href="./about.html">👨🏻 About</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <main class="content about-page">
+        <section class="section">
+          <div class="container">
+            <div class="section-info">
+              <div class="section-head">
+                <h2 class="section-title">About</h2>
+              </div>
+            </div>
+
+            <div class="about-section">
+              <p>
+                안녕하세요, Chuck Park입니다. 저는 <strong>AI로 실제 수익이 나는 서비스</strong>를 만드는 데 집중하고 있습니다.
+                단순히 기능을 구현하는 데서 끝나지 않고, 출시 후 전환율과 재방문율 같은 지표로 다음 결정을 내립니다.
+              </p>
+              <p>
+                현재는 커머스 자동화, 인증/결제 퍼널 개선, 내부 운영 자동화 프로젝트를 병행하며
+                실행 속도와 실험 루프를 높이는 방식으로 제품을 운영하고 있습니다.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container">
+            <div class="section-info">
+              <div class="section-head">
+                <h2 class="section-title">What I Focus On</h2>
+              </div>
+            </div>
+
+            <div class="about-grid">
+              <article class="about-card">
+                <h3>Product Execution</h3>
+                <p>아이디어를 MVP로 빠르게 구현하고 실제 고객 반응으로 제품 방향을 조정합니다.</p>
+              </article>
+
+              <article class="about-card">
+                <h3>Automation</h3>
+                <p>반복 업무를 자동화해 운영 시간을 줄이고 중요한 의사결정에 시간을 집중합니다.</p>
+              </article>
+
+              <article class="about-card">
+                <h3>Growth Loop</h3>
+                <p>가입/로그인/결제 퍼널을 지속적으로 측정하고 병목을 개선해 전환율을 높입니다.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section contact">
+          <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <p>협업 또는 프로젝트 문의: <a href="mailto:chuck.m.park@gmail.com">chuck.m.park@gmail.com</a></p>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <p>© <span id="year"></span> Chuck Park. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
