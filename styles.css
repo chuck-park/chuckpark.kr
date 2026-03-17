@@ -157,7 +157,7 @@ a:hover { opacity: .86; }
 }
 
 .tab-panel .section:first-child {
-  margin-top: 0;
+  margin-top: 32px;
 }
 
 .section {
