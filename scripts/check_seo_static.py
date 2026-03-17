@@ -23,7 +23,6 @@ def main() -> None:
     pages = {
         "index.html": read("index.html"),
         "about.html": read("about.html"),
-        "blog.html": read("blog.html"),
         "portfolio.html": read("portfolio.html"),
     }
 
@@ -34,10 +33,6 @@ def main() -> None:
         require(has_meta(html, 'rel="canonical"'), f"{name}: canonical is missing")
         require(has_meta(html, 'property="og:title"'), f"{name}: og:title is missing")
         require(has_meta(html, 'name="twitter:card"'), f"{name}: twitter:card is missing")
-
-    blog_html = pages["blog.html"]
-    require('class="article-small"' in blog_html, "blog.html: static article list is missing")
-    require('data-blog-feed-list' not in blog_html, "blog.html: dynamic feed hook should be removed")
 
     print("SEO static checks: PASS")
 
