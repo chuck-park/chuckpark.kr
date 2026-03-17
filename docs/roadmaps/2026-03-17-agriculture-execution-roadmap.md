@@ -217,6 +217,7 @@
 - 상세페이지 템플릿: `docs/playbooks/2026-03-17-coupang-detail-page-template.md`
 - 키워드 후보 평가표: `docs/playbooks/2026-03-17-keyword-candidate-scorecard.md`
 - 합법적 운영 원칙: `docs/playbooks/2026-03-17-legal-operations-principles.md`
+- 정책 리스크 참고: `docs/playbooks/2026-03-17-policy-risk-tactics-reference.md`
 - 이후 필요 문서
   - SNS 콘텐츠 캘린더
   - 자동화 기능 명세
