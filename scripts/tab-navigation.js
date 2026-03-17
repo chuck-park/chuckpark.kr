@@ -6,7 +6,8 @@
   const validTabs = panels.map((panel) => panel.dataset.tabPanel);
 
   const getTabFromHash = () => {
-    const value = window.location.hash.replace(/^#/, '');
+    const rawValue = window.location.hash.replace(/^#/, '');
+    const value = rawValue === 'blog' ? 'writing' : rawValue;
     return validTabs.includes(value) ? value : 'home';
   };
 
