@@ -175,6 +175,11 @@ a:hover { opacity: .86; }
   gap: 12px;
 }
 
+.tab-panel-link-row {
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
 .section-title {
   margin: 0;
   font-size: 24px;
