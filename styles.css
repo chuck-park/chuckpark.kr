@@ -96,6 +96,27 @@ a:hover { opacity: .86; }
   font-weight: 500;
 }
 
+.author-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 12px;
+}
+
+.author-detail {
+  color: #b5b5b5;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.author-detail-link {
+  width: fit-content;
+}
+
+.author-detail-link:hover {
+  color: var(--white);
+}
+
 .author-bio {
   margin: 0;
   color: #c3c3c3;
