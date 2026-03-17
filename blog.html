@@ -3,8 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Writing — Chuck Park</title>
-    <meta name="description" content="Chuck Park의 Writing 아카이브" />
+    <title>Writing | Chuck Park</title>
+    <meta name="description" content="Chuck Park의 Writing 아카이브. 제품 빌드 로그, 개발 메모, AI와 자동화 관련 글 모음." />
+    <meta name="robots" content="index,follow" />
+    <link rel="canonical" href="https://chuckpark.kr/blog.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Chuck Park" />
+    <meta property="og:title" content="Writing | Chuck Park" />
+    <meta property="og:description" content="Chuck Park의 Writing 아카이브. 제품 빌드 로그, 개발 메모, AI와 자동화 관련 글 모음." />
+    <meta property="og:url" content="https://chuckpark.kr/blog.html" />
+    <meta property="og:image" content="https://chuckpark.kr/assets/cover-seoul.jpg" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Writing | Chuck Park" />
+    <meta name="twitter:description" content="Chuck Park의 Writing 아카이브. 제품 빌드 로그, 개발 메모, AI와 자동화 관련 글 모음." />
+    <meta name="twitter:image" content="https://chuckpark.kr/assets/cover-seoul.jpg" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" as="style" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -71,12 +84,58 @@
               </div>
             </div>
 
-            <div class="article-list" id="blog-feed-list" data-blog-feed-list data-limit="12"></div>
-            <p class="feed-status" id="blog-feed-status" data-blog-feed-status>최신 글을 불러오는 중입니다…</p>
-            <noscript>
-              <p class="feed-status"><a href="https://blog.chuckpark.kr" target="_blank" rel="noreferrer">blog.chuckpark.kr에서 최신 글 보기 →</a></p>
-            </noscript>
-            <script src="./scripts/blog-feed.js"></script>
+            <div class="article-list">
+              <article class="article-small">
+                <h3><a href="https://blog.chuckpark.kr/product/the-final-destination-of-link-saving-openclaw/" target="_blank" rel="noreferrer">링크 저장 방식의 종착지, openclaw</a></h3>
+                <p>요즘은 저장할 정보보다 저장해야 할 정보가 더 빨리 늘어납니다. 좋은 글을 읽다가 “이건 나중에 다시 봐야지” 싶으면 일단 어디엔가 넣어두게 되는데, 문제는 그다음입니다.</p>
+                <div class="article-meta">2026년 3월 14일</div>
+              </article>
+              <article class="article-small">
+                <h3><a href="https://blog.chuckpark.kr/cs/multi-processing-and-multi-threading/" target="_blank" rel="noreferrer">멀티프로세싱(Multi Processing)과 멀티스레딩(Multi Threading)</a></h3>
+                <p>컴퓨터(Computer)는 핵심이 되는 장치인 CPU(Central Processing Unit)를 갖는다.</p>
+                <div class="article-meta">2025년 3월 15일</div>
+              </article>
+              <article class="article-small">
+                <h3><a href="https://blog.chuckpark.kr/dev/github-push-403-error/" target="_blank" rel="noreferrer">Github Push 할 때 403 에러</a></h3>
+                <p>어느날 push를 하려고 하니 해당 repo에 권한이 없다고 403 에러가 뜬다.</p>
+                <div class="article-meta">2024년 12월 13일</div>
+              </article>
+              <article class="article-small">
+                <h3><a href="https://blog.chuckpark.kr/dev/json-type-in-maria-db/" target="_blank" rel="noreferrer">Maria DB의 JSON Data Type</a></h3>
+                <p>MariaDB에서 JSON type은 사실 LONGTEXT 이다.</p>
+                <div class="article-meta">2024년 12월 10일</div>
+              </article>
+              <article class="article-small">
+                <h3><a href="https://blog.chuckpark.kr/etc/tech-contents-copy/" target="_blank" rel="noreferrer">테크 컨텐츠 모음</a></h3>
+                <p>개발자에게 가장 양질의 tech contents는 기술 기업의 tech blog나 conference 발표 자료들이라고 생각합니다.</p>
+                <div class="article-meta">2024년 4월 24일</div>
+              </article>
+              <article class="article-small">
+                <h3><a href="https://blog.chuckpark.kr/life/ai-generated-character-of-me/" target="_blank" rel="noreferrer">AI로 귀여운 내 캐릭터 만들기</a></h3>
+                <p>이번에는 ChatGPT의 DALL-E를 이용해서 내 캐릭터를 만들어봤다. 내 사진을 올리고 배경을 흰색으로 바꾸고, SD(Super Deformation) 캐릭터로 만들었다.</p>
+                <div class="article-meta">2024년 1월 1일</div>
+              </article>
+              <article class="article-small">
+                <h3><a href="https://blog.chuckpark.kr/life/retrospective-2023/" target="_blank" rel="noreferrer">2023 회고</a></h3>
+                <p>2023년에는 정말 많은 일이 있었다.</p>
+                <div class="article-meta">2023년 12월 31일</div>
+              </article>
+              <article class="article-small">
+                <h3><a href="https://blog.chuckpark.kr/life/get-used-to-prompt/" target="_blank" rel="noreferrer">prompt와 친해지기</a></h3>
+                <p>GPT를 잘 쓰면 생산성이 팍팍 올라가지 않을까하여 GPT에 좀 더 익숙해져보기로 했다. 우선 첫번째는 생각한 것을 이미지로 표현해보기.</p>
+                <div class="article-meta">2023년 12월 11일</div>
+              </article>
+              <article class="article-small">
+                <h3><a href="https://blog.chuckpark.kr/book/hexagonal-developer/" target="_blank" rel="noreferrer">육각형 개발자</a></h3>
+                <p>회사에서 스터디를 시작했다. 다양한 주제의 책을 읽고 느낀점을 공유하는 방식으로 진행했고, 이번에 읽은 책은 ‘육각형 개발자’였다.</p>
+                <div class="article-meta">2023년 11월 18일</div>
+              </article>
+              <article class="article-small">
+                <h3><a href="https://blog.chuckpark.kr/dev/large-traffic-research-3/" target="_blank" rel="noreferrer">대규모 서비스에 대한 연구 3 - I/O 부하 분산과 OS 캐시</a></h3>
+                <p>익숙함에 속아 중요함을 잊지말자 - 운영체제</p>
+                <div class="article-meta">2023년 6월 29일</div>
+              </article>
+            </div>
           </div>
         </section>
       </main>
