@@ -47,6 +47,19 @@ a:hover { opacity: .86; }
 
 .global-content { background: var(--bg); }
 
+.page-content-only .global-cover,
+.page-content-only .author {
+  display: none;
+}
+
+.page-content-only .header {
+  padding-top: 20px;
+}
+
+.page-content-only .content {
+  margin-top: 8px;
+}
+
 .author {
   position: relative;
   margin-top: -64px;
