@@ -1,9 +1,7 @@
 (function () {
-  const list = document.getElementById('blog-feed-list');
-  const status = document.getElementById('blog-feed-status');
-  if (!list) return;
+  const lists = Array.from(document.querySelectorAll('[data-blog-feed-list]'));
+  if (!lists.length) return;
 
-  const limit = Number(list.dataset.limit || 3);
   const FEED_URL = 'https://blog.chuckpark.kr/feed.xml';
 
   const stripHtml = (html) => {
@@ -46,21 +44,29 @@
     })
     .then((xmlText) => {
       const xml = new DOMParser().parseFromString(xmlText, 'text/xml');
-      const items = Array.from(xml.querySelectorAll('item')).slice(0, limit);
+      const items = Array.from(xml.querySelectorAll('item'));
 
       if (!items.length) {
         throw new Error('no items');
       }
 
-      const fragment = document.createDocumentFragment();
-      items.forEach((item) => fragment.appendChild(renderItem(item)));
-      list.innerHTML = '';
-      list.appendChild(fragment);
-      if (status) status.remove();
+      lists.forEach((list) => {
+        const limit = Number(list.dataset.limit || 3);
+        const status = list.parentElement?.querySelector('[data-blog-feed-status]');
+        const fragment = document.createDocumentFragment();
+
+        items.slice(0, limit).forEach((item) => fragment.appendChild(renderItem(item)));
+        list.innerHTML = '';
+        list.appendChild(fragment);
+        if (status) status.remove();
+      });
     })
     .catch(() => {
-      if (status) {
-        status.innerHTML = '<a href="https://blog.chuckpark.kr" target="_blank" rel="noreferrer">최신 글은 blog.chuckpark.kr에서 확인해주세요 →</a>';
-      }
+      lists.forEach((list) => {
+        const status = list.parentElement?.querySelector('[data-blog-feed-status]');
+        if (status) {
+          status.innerHTML = '<a href="https://blog.chuckpark.kr" target="_blank" rel="noreferrer">최신 글은 blog.chuckpark.kr에서 확인해주세요 →</a>';
+        }
+      });
     });
 })();

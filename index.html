@@ -50,123 +50,210 @@
       <header class="header">
         <div class="container">
           <nav class="main-nav">
-            <ul class="nav-list">
-              <li><a class="active" href="#">🏠 Home</a></li>
-              <li><a href="./portfolio.html">🚀 Portfolio</a></li>
+            <ul class="nav-list" role="tablist" aria-label="주요 메뉴">
+              <li><a id="tab-home" class="active" href="#home" data-tab-link="home" role="tab" aria-controls="panel-home" aria-selected="true">🏠 Home</a></li>
+              <li><a id="tab-portfolio" href="#portfolio" data-tab-link="portfolio" role="tab" aria-controls="panel-portfolio" aria-selected="false">🚀 Portfolio</a></li>
               <!-- <li><a href="#testimonials">💬 Testimonials</a></li> -->
-              <li><a href="./blog.html">✍️ Blog</a></li>
-              <li><a href="./about.html">👨🏻 About</a></li>
+              <li><a id="tab-blog" href="#blog" data-tab-link="blog" role="tab" aria-controls="panel-blog" aria-selected="false">✍️ Blog</a></li>
+              <li><a id="tab-about" href="#about" data-tab-link="about" role="tab" aria-controls="panel-about" aria-selected="false">👨🏻 About</a></li>
             </ul>
           </nav>
         </div>
       </header>
 
-      <main class="content">
-        <section id="projects" class="section">
-          <div class="container">
-            <div class="section-info">
-              <div class="section-head">
-                <h2 class="section-title">🚀 Portfolio</h2>
-                <a class="section-link" href="./portfolio.html">더 보기 →</a>
+      <main class="content tab-content">
+        <div class="tab-panels">
+          <div id="panel-home" class="tab-panel is-active" data-tab-panel="home" role="tabpanel" aria-labelledby="tab-home">
+            <section id="projects" class="section">
+              <div class="container">
+                <div class="section-info">
+                  <div class="section-head">
+                    <h2 class="section-title">🚀 Portfolio</h2>
+                    <a class="section-link" href="./portfolio.html">더 보기 →</a>
+                  </div>
+                </div>
+
+                <div class="project-grid">
+                  <article class="project-card project-card--link">
+                    <div class="project-info">
+                      <h3>호랑사주</h3>
+                      <p>사주를 쉽고 친근하게 풀어주는 AI 운세 서비스</p>
+                    </div>
+                    <div class="project-image project-image--contain">
+                      <img src="./assets/horangsaju-card.jpg" alt="ai-saju" />
+                    </div>
+                    <a class="project-card-link" href="https://horangsaju.com/" target="_blank" rel="noreferrer" aria-label="AI 사주 서비스 사이트 이동"></a>
+                  </article>
+
+                  <article class="project-card">
+                    <div class="project-info">
+                      <h3>농산물 이커머스 자동화</h3>
+                      <p>상품 운영 자동화와 재구매 전환 실험을 통해 실제 매출 지표를 개선하는 프로젝트.</p>
+                    </div>
+                    <div class="project-image">
+                      <img src="https://images.unsplash.com/photo-1488459716781-31db52582fe9?auto=format&fit=crop&w=900&q=80" alt="commerce" />
+                    </div>
+                  </article>
+
+                  <article class="project-card">
+                    <div class="project-info">
+                      <h3>운영 자동화 스택</h3>
+                      <p>반복 업무, 리포트 작성, 알림 체계를 자동화해 운영 시간을 줄이고 실행 속도를 높이는 내부 툴.</p>
+                    </div>
+                    <div class="project-image">
+                      <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=900&q=80" alt="ops" />
+                    </div>
+                  </article>
+                </div>
               </div>
-            </div>
+            </section>
 
-            <div class="project-grid">
-              <article class="project-card project-card--link">
-                <div class="project-info">
-                  <h3>호랑사주</h3>
-                  <p>사주를 쉽고 친근하게 풀어주는 AI 운세 서비스</p>
+            <section id="insights" class="section">
+              <div class="container">
+                <div class="section-info">
+                  <div class="section-head">
+                    <h2 class="section-title">✍️ Blog</h2>
+                    <a class="section-link" href="./blog.html">더 보기 →</a>
+                  </div>
                 </div>
-                <div class="project-image project-image--contain">
-                  <img src="./assets/horangsaju-card.jpg" alt="ai-saju" />
-                </div>
-                <a class="project-card-link" href="https://horangsaju.com/" target="_blank" rel="noreferrer" aria-label="AI 사주 서비스 사이트 이동"></a>
-              </article>
 
-              <article class="project-card">
-                <div class="project-info">
-                  <h3>농산물 이커머스 자동화</h3>
-                  <p>상품 운영 자동화와 재구매 전환 실험을 통해 실제 매출 지표를 개선하는 프로젝트.</p>
-                </div>
-                <div class="project-image">
-                  <img src="https://images.unsplash.com/photo-1488459716781-31db52582fe9?auto=format&fit=crop&w=900&q=80" alt="commerce" />
-                </div>
-              </article>
-
-              <article class="project-card">
-                <div class="project-info">
-                  <h3>운영 자동화 스택</h3>
-                  <p>반복 업무, 리포트 작성, 알림 체계를 자동화해 운영 시간을 줄이고 실행 속도를 높이는 내부 툴.</p>
-                </div>
-                <div class="project-image">
-                  <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=900&q=80" alt="ops" />
-                </div>
-              </article>
-
-            </div>
-          </div>
-        </section>
-
-        <!--
-        <section id="testimonials" class="section testimonials">
-          <div class="container">
-            <div class="section-info">
-              <div class="section-head">
-                <h2 class="section-title">💬 Testimonials</h2>
+                <div class="article-list" data-blog-feed-list data-limit="3"></div>
+                <p class="feed-status" data-blog-feed-status>최신 글을 불러오는 중입니다…</p>
+                <noscript>
+                  <p class="feed-status"><a href="https://blog.chuckpark.kr" target="_blank" rel="noreferrer">blog.chuckpark.kr에서 최신 글 보기 →</a></p>
+                </noscript>
               </div>
-            </div>
+            </section>
 
-            <div class="testimonial-row">
-              <article class="testimonial-item">
-                <p class="quote">“실행 속도가 정말 빠릅니다. 아이디어를 바로 실험 가능한 형태로 바꿔줍니다.”</p>
-                <div class="client">- Product Collaborator</div>
-              </article>
-              <article class="testimonial-item">
-                <p class="quote">“복잡한 운영 루틴을 자동화해서 팀의 반복 업무 부담이 크게 줄었습니다.”</p>
-                <div class="client">- Ops Partner</div>
-              </article>
-              <article class="testimonial-item">
-                <p class="quote">“지표를 보고 다음 액션을 결정하는 방식이 명확해서 개선 속도가 빠릅니다.”</p>
-                <div class="client">- Growth Marketer</div>
-              </article>
-            </div>
-          </div>
-        </section>
-        -->
+            <section id="subscribe" class="section">
+              <div class="container">
+                <div class="subscribe-box">
+                  <h2 class="section-title">chuckpark.kr의 새로운 글과 인사이트를 가장 먼저 이메일로 받아보세요.</h2>
 
-        <section id="insights" class="section">
-          <div class="container">
-            <div class="section-info">
-              <div class="section-head">
-                <h2 class="section-title">✍️ Blog</h2>
-                <a class="section-link" href="./blog.html">더 보기 →</a>
+                  <form class="subscribe-form" action="https://buttondown.com/api/emails/embed-subscribe/chuckpark" method="post">
+                    <label class="screen-reader-text" for="subscribe-email">이메일 주소</label>
+                    <input id="subscribe-email" class="subscribe-input" type="email" name="email" placeholder="이메일 주소를 입력해주세요." required />
+                    <button class="subscribe-button" type="submit">이메일 구독</button>
+                  </form>
+                </div>
               </div>
-            </div>
-
-            <div class="article-list" id="blog-feed-list" data-limit="3"></div>
-            <p class="feed-status" id="blog-feed-status">최신 글을 불러오는 중입니다…</p>
-            <noscript>
-              <p class="feed-status"><a href="https://blog.chuckpark.kr" target="_blank" rel="noreferrer">blog.chuckpark.kr에서 최신 글 보기 →</a></p>
-            </noscript>
+            </section>
           </div>
-        </section>
 
-        <section id="subscribe" class="section">
-          <div class="container">
-            <div class="subscribe-box">
-              <h2 class="section-title">chuckpark.kr의 새로운 글과 인사이트를 가장 먼저 이메일로 받아보세요.</h2>
+          <div id="panel-portfolio" class="tab-panel" data-tab-panel="portfolio" role="tabpanel" aria-labelledby="tab-portfolio" hidden>
+            <section class="section">
+              <div class="container">
+                <div class="section-info">
+                  <div class="section-head">
+                    <h2 class="section-title">🚀 Portfolio</h2>
+                    <a class="section-link" href="./portfolio.html">페이지로 보기 →</a>
+                  </div>
+                </div>
 
-              <form class="subscribe-form" action="https://buttondown.com/api/emails/embed-subscribe/chuckpark" method="post">
-                <label class="screen-reader-text" for="subscribe-email">이메일 주소</label>
-                <input id="subscribe-email" class="subscribe-input" type="email" name="email" placeholder="이메일 주소를 입력해주세요." required />
-                <button class="subscribe-button" type="submit">이메일 구독</button>
-              </form>
-
-
-            </div>
+                <div class="project-grid">
+                  <article class="project-card project-card--link">
+                    <div class="project-info">
+                      <h3>호랑사주</h3>
+                      <p>사주를 쉽고 친근하게 풀어주는 AI 운세 서비스</p>
+                    </div>
+                    <div class="project-image project-image--contain">
+                      <img src="./assets/horangsaju-card.jpg" alt="ai-saju" />
+                    </div>
+                    <a class="project-card-link" href="https://horangsaju.com/" target="_blank" rel="noreferrer" aria-label="AI 사주 서비스 사이트 이동"></a>
+                  </article>
+                  <article class="project-card">
+                    <div class="project-info">
+                      <h3>농산물 이커머스 자동화</h3>
+                      <p>상품 운영 자동화와 재구매 전환 실험을 통해 실제 매출 지표를 개선하는 프로젝트.</p>
+                    </div>
+                  </article>
+                  <article class="project-card">
+                    <div class="project-info">
+                      <h3>운영 자동화 스택</h3>
+                      <p>반복 업무, 리포트 작성, 알림 체계를 자동화해 운영 시간을 줄이고 실행 속도를 높이는 내부 툴.</p>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </section>
           </div>
-        </section>
 
+          <div id="panel-blog" class="tab-panel" data-tab-panel="blog" role="tabpanel" aria-labelledby="tab-blog" hidden>
+            <section class="section">
+              <div class="container">
+                <div class="section-info">
+                  <div class="section-head">
+                    <h2 class="section-title">✍️ Blog</h2>
+                    <a class="section-link" href="./blog.html">페이지로 보기 →</a>
+                  </div>
+                </div>
+
+                <div class="article-list" data-blog-feed-list data-limit="12"></div>
+                <p class="feed-status" data-blog-feed-status>최신 글을 불러오는 중입니다…</p>
+                <noscript>
+                  <p class="feed-status"><a href="https://blog.chuckpark.kr" target="_blank" rel="noreferrer">blog.chuckpark.kr에서 최신 글 보기 →</a></p>
+                </noscript>
+              </div>
+            </section>
+          </div>
+
+          <div id="panel-about" class="tab-panel about-page" data-tab-panel="about" role="tabpanel" aria-labelledby="tab-about" hidden>
+            <section class="section">
+              <div class="container">
+                <div class="section-info">
+                  <div class="section-head">
+                    <h2 class="section-title">About</h2>
+                  </div>
+                </div>
+
+                <div class="about-section">
+                  <p>
+                    안녕하세요, Chuck Park입니다. 저는 <strong>AI로 실제 수익이 나는 서비스</strong>를 만드는 데 집중하고 있습니다.
+                    단순히 기능을 구현하는 데서 끝나지 않고, 출시 후 전환율과 재방문율 같은 지표로 다음 결정을 내립니다.
+                  </p>
+                  <p>
+                    현재는 커머스 자동화, 인증/결제 퍼널 개선, 내부 운영 자동화 프로젝트를 병행하며
+                    실행 속도와 실험 루프를 높이는 방식으로 제품을 운영하고 있습니다.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <section class="section">
+              <div class="container">
+                <div class="section-info">
+                  <div class="section-head">
+                    <h2 class="section-title">What I Focus On</h2>
+                  </div>
+                </div>
+
+                <div class="about-grid">
+                  <article class="about-card">
+                    <h3>Product Execution</h3>
+                    <p>아이디어를 MVP로 빠르게 구현하고 실제 고객 반응으로 제품 방향을 조정합니다.</p>
+                  </article>
+
+                  <article class="about-card">
+                    <h3>Automation</h3>
+                    <p>반복 업무를 자동화해 운영 시간을 줄이고 중요한 의사결정에 시간을 집중합니다.</p>
+                  </article>
+
+                  <article class="about-card">
+                    <h3>Growth Loop</h3>
+                    <p>가입/로그인/결제 퍼널을 지속적으로 측정하고 병목을 개선해 전환율을 높입니다.</p>
+                  </article>
+                </div>
+              </div>
+            </section>
+
+            <section class="section contact">
+              <div class="container">
+                <h2 class="section-title">Contact</h2>
+                <p>협업 또는 프로젝트 문의: <a href="mailto:chuck.m.park@gmail.com">chuck.m.park@gmail.com</a></p>
+              </div>
+            </section>
+          </div>
+        </div>
       </main>
 
       <footer class="footer">
@@ -182,6 +269,7 @@
     </div>
 
     <script src="./scripts/blog-feed.js"></script>
+    <script src="./scripts/tab-navigation.js"></script>
     <script>
       document.getElementById('year').textContent = new Date().getFullYear();
     </script>

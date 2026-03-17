@@ -47,19 +47,6 @@ a:hover { opacity: .86; }
 
 .global-content { background: var(--bg); }
 
-.page-content-only .global-cover,
-.page-content-only .author {
-  display: none;
-}
-
-.page-content-only .header {
-  padding-top: 20px;
-}
-
-.page-content-only .content {
-  margin-top: 8px;
-}
-
 .author {
   position: relative;
   margin-top: -64px;
@@ -163,6 +150,14 @@ a:hover { opacity: .86; }
 
 .content {
   margin-top: 16px;
+}
+
+.tab-panel[hidden] {
+  display: none !important;
+}
+
+.tab-panel .section:first-child {
+  margin-top: 0;
 }
 
 .section {
