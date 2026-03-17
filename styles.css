@@ -47,6 +47,17 @@ a:hover { opacity: .86; }
 
 .global-content { background: var(--bg); }
 
+.detail-page .global-cover,
+.detail-page .author,
+.detail-page .header {
+  display: none;
+}
+
+.detail-page .content {
+  margin-top: 0;
+  padding-top: 32px;
+}
+
 .author {
   position: relative;
   margin-top: -64px;
