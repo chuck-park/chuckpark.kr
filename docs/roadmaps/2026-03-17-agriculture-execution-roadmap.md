@@ -213,8 +213,11 @@
 
 ## 10. 이후 문서화 우선순위
 
-- SKU 평가표
-- 쿠팡 상세페이지 템플릿
-- SNS 콘텐츠 캘린더
-- 자동화 기능 명세
-- 자사몰 정보 구조
+- 실행 체크리스트: `docs/playbooks/2026-03-17-coupang-execution-checklist.md`
+- 상세페이지 템플릿: `docs/playbooks/2026-03-17-coupang-detail-page-template.md`
+- 키워드 후보 평가표: `docs/playbooks/2026-03-17-keyword-candidate-scorecard.md`
+- 합법적 운영 원칙: `docs/playbooks/2026-03-17-legal-operations-principles.md`
+- 이후 필요 문서
+  - SNS 콘텐츠 캘린더
+  - 자동화 기능 명세
+  - 자사몰 정보 구조
