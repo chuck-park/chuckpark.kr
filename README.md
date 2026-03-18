@@ -27,7 +27,7 @@ python3 -m http.server 8000
 예:
 
 ```bash
-npx serve .
+npx serve -p 8000
 ```
 
 또는 에디터의 Live Server 확장 기능으로 열어도 됩니다.
