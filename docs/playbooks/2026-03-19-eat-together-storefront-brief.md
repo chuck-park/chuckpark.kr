@@ -185,5 +185,5 @@
 - 반려견 관련 가이드를 어느 수준까지 노출할 것인가
 
 연관 문서:
-- `docs/playbooks/2026-03-19-gachimeokgae-brand-guide.md`
-- `docs/playbooks/2026-03-19-gachimeokgae-smartstore-setup.md`
+- `docs/playbooks/2026-03-19-eat-together-brand-guide.md`
+- `docs/playbooks/2026-03-19-eat-together-smartstore-setup.md`

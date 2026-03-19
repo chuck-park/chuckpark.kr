@@ -159,5 +159,5 @@
 - 문의/리뷰 응답 기준 확정
 
 연관 문서:
-- `docs/playbooks/2026-03-19-gachimeokgae-brand-guide.md`
-- `docs/playbooks/2026-03-19-gachimeokgae-storefront-brief.md`
+- `docs/playbooks/2026-03-19-eat-together-brand-guide.md`
+- `docs/playbooks/2026-03-19-eat-together-storefront-brief.md`

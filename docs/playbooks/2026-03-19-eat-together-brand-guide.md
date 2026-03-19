@@ -165,5 +165,5 @@ Minimal Korean wordmark logo for "같이먹개", warm, witty, modern lifestyle p
 - SNS 프로필 문구
 
 연관 문서:
-- `docs/playbooks/2026-03-19-gachimeokgae-smartstore-setup.md`
-- `docs/playbooks/2026-03-19-gachimeokgae-storefront-brief.md`
+- `docs/playbooks/2026-03-19-eat-together-smartstore-setup.md`
+- `docs/playbooks/2026-03-19-eat-together-storefront-brief.md`
